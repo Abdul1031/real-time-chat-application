@@ -1,0 +1,98 @@
+/* Login form styles using variables from index.css */
+.login-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: var(--light-bg);
+}
+
+.login-form {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  width: 100%;
+  max-width: 420px;
+}
+
+.login-heading {
+  margin: 0 0 1rem 0;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--text);
+}
+
+/* each field container */
+.field-row {
+  position: relative;
+  margin-bottom: 0.6rem;
+}
+
+/* inputs */
+.login-input {
+  width: 100%;
+  padding: 12px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+  background: #fff;
+}
+
+.login-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(76,175,80,0.08);
+}
+
+/* invalid input border */
+.login-input.invalid {
+  border-color: var(--error);
+  box-shadow: none;
+}
+
+/* small inline error messages */
+.small-error {
+  color: var(--error);
+  font-size: 12px;
+  margin: 6px 0 0 4px;
+}
+
+/* small red asterisk at right inside the field */
+.error-asterisk {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: var(--error);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* button */
+.login-button {
+  width: 100%;
+  padding: 11px;
+  margin-top: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.login-button:disabled {
+  background: var(--disabled);
+  cursor: not-allowed;
+}
+
+/* footer text */
+.login-text {
+  margin-top: 0.9rem;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+}

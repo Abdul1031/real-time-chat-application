@@ -1,0 +1,77 @@
+.mainlist-container {
+  max-width: 700px;
+  margin: 40px auto 80px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  padding: 2rem;
+}
+.mainlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.mainlist-filter {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+.mainlist-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+.mainlist-item {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.mainlist-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.mainlist-desc {
+  color: #666;
+  font-size: 0.97rem;
+}
+.mainlist-detail {
+  color: var(--primary);
+  font-size: 0.95rem;
+  text-decoration: underline;
+  align-self: flex-end;
+}
+.mainlist-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.mainlist-pagination button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.mainlist-pagination button:disabled {
+  background: #e0e0e0;
+  color: #888;
+  cursor: not-allowed;
+}
+@media (max-width: 600px) {
+  .mainlist-container {
+    padding: 1rem;
+  }
+  .mainlist-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
